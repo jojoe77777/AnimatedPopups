@@ -1,0 +1,6 @@
+name: AnimatedPopups
+main: AnimatedPopups\Main
+version: 1.0
+api: [2.0.0]
+author: jojoe77777
+description: Send animated messages!
