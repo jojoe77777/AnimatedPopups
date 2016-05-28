@@ -75,11 +75,13 @@ class MessageTask extends PluginTask {
             "{gamemode}" => $player->getGamemode(),
             "{health}" => $player->getHealth(),
             "{ip}" => $player->getAddress(),
+            "{port}" => $player->getPort,
             "{nametag}" => $player->getNameTag(),
             "{yaw}" => $player->getYaw(),
             "{pitch}" => $player->getPitch(),
-            "{world}" => $player->getLevel()->getName(),
-            "{line}" => "\n"
+            "{level}" => $player->getLevel()->getName(),
+            "{address}" => "{ip}:{port}"
+            "%l" => "\n"
         ];
         return str_ireplace(array_keys($placeholders), array_values($placeholders), $string);
     }
