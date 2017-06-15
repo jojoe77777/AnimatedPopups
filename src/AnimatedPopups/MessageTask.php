@@ -9,10 +9,10 @@ class MessageTask extends PluginTask {
 
     const LOOP = 0; // When finished goes back to frame 1
     const REVERSE_LOOP = 1; // Reverses when reaches the end, goes back and forth
-    const PING_PONG = 1; // Reverses when reaches the end, goes back and forth (Same as REVERSE_LOOP)
+    const PING_PONG = self::REVERSE_LOOP;
 
-    const REVERSING = 10;
-    const FORWARD = 11;
+    const REVERSING = 0;
+    const FORWARD = 1;
 
     public $owner;
     public $config;
