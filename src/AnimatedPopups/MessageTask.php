@@ -8,8 +8,7 @@ use pocketmine\scheduler\PluginTask;
 class MessageTask extends PluginTask {
 
     const LOOP = 0; // When finished goes back to frame 1
-    const REVERSE_LOOP = 1; // Reverses when reaches the end, goes back and forth
-    const PING_PONG = self::REVERSE_LOOP;
+    const REVERSE_LOOP, PING_PONG = 1; // Reverses when reaches the end, goes back and forth
 
     const REVERSING = 0;
     const FORWARD = 1;
